@@ -60,9 +60,31 @@ body {
   border-radius: 0.5rem;
 }
 
+.img-container {
+  position: relative;
+}
+
 .main-img {
+  display: block;
   width: 100%;
   border-radius: 0.5rem;
+}
+
+.img-icon {
+  position: absolute;
+  border-radius: 0.5rem;
+  top: 0;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: var(--clr-pri-cyan);
+}
+
+.img-container:hover .img-icon {
+  opacity: 0.7;
+  transition: 0.3s ease;
 }
 
 .stats {
@@ -95,4 +117,11 @@ body {
   height: 2rem;
   border: 1px solid var(--clr-sec-white);
   border-radius: 1rem;
+}
+
+.creator-name:hover,
+.title:hover {
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: var(--clr-pri-cyan);
 }
