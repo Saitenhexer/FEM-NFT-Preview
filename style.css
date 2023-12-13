@@ -86,6 +86,7 @@ body {
 .img-container:hover .img-icon {
   opacity: 0.7;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .stats {
